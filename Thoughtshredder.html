@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/thoughtshredder.css">
+    <script src="scripts/thoughtshredder.js"></script>
+    
+    <title>Thought Shredder</title>
+</head>
+<body>
+    <div class="nav">
+        <div>
+            <a href="/" aria-current="page" class="link-block-2 w-inline-block w--current">
+                <img src="images/reconstruct.png" loading="lazy" alt="" class="image-6">
+            </a>
+        </div>
+        <div class="div-block-19">
+            <a href="Thoughtshredder.html" class="submitcontainer button left w-button">Thought Shredder</a>
+            <a href="break-things.html" class="submitcontainer button left app w-button">Break Things</a>
+            <link rel="prefetch" href="/waitlist">
+        </div>
+    </div>
+    <div class="heading">
+    <p>What are you 
+        thinking about?
+    </p>
+</div>
+    <div class="subline">
+        <p>The average person has about 60,000 thoughts a day. 80% of these thoughts were found to be negative,
+            <br>
+         and 95% were exactly the same repetitive thoughts as the day before. Break the cycle of overthinking, go ahead and shred your thoughts!</p>
+    </div>
+
+    <div class="container">
+        <div class="textarea-container">
+            <textarea id="thoughts" placeholder="Share your thoughts..." style="background-image: url('images/white-paper-texture.jpg');"></textarea>
+        </div>
+        <div id="shredded-text" style="background-image: url('images/shredded-paper.png');"></div>
+        <button id="submit" onclick="shredText()">SHRED YOUR THOUGHTS!</button>
+        <audio id="shredder-sound" src="MP3/shredder-sound.mp3" type="audio/mpeg"></audio>
+        
+    </div>
+    <p>Total Submissions: <span id="submissionCount">0</span></p>
+    <script src="countSubmissions.js"></script>
+</body>
+</html>
