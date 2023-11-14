@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Breakable Items</title>
     <link rel="stylesheet" href="styles/break-things.css">
-    <script src="js/breakthings.js"></script>
 </head>
 <body>
 
@@ -18,7 +17,7 @@
         <div class="div-block-19">
             <a href="Thoughtshredder.html" class="submitcontainer button left w-button">Thought Shredder</a>
             <a href="break-things.html" class="submitcontainer button left app w-button">Break Things</a>
-            <link rel="prefetch" href="/waitlist">
+            <a href="Call-me.html" class="submitcontainer button last w-button">Call Me</a>
         </div>
     </div>
         <h1>Click and break things!</h1>
@@ -109,10 +108,18 @@
   <img class="breakable" src="images/item4.png" alt="Item 2">
   <audio class="breakSound" src="MP3/item4-break.mp3" preload="auto"></audio>
 </div>
-
-            <!-- Add more items -->
-            <!-- ... -->
-        </div>
-    </div>
+</div>
+<footer id="footer"></footer>
+<script>
+  // Load the footer content dynamically
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footer').innerHTML = html;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+</script>
+</div>
+<script src="js/breakthings.js"></script>
 </body>
 </html>
