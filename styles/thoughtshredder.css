@@ -56,12 +56,34 @@ body {
   transition: background-color .2s cubic-bezier(.23, 1, .32, 1);
 }
 
+.submitcontainer.button.last {
+  color: rgba(0, 0, 0, .6);
+  background-color: #ebebeb;
+  border-width: 0;
+  margin-right: 12px;
+  padding: 8px 24px;
+  font-weight: 500;
+  transition: background-color .2s cubic-bezier(.23, 1, .32, 1);
+}
+
 .submitcontainer.button.left:hover {
   color: #fff;
   background-color: rgba(0, 0, 0, .6);
 }
 
+.submitcontainer.button.last:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, .6);
+}
+
 .submitcontainer.button.left.w--current {
+  color: #fff;
+  background-color: #000;
+  margin-right: 12px;
+  transition: background-color .2s cubic-bezier(.23, 1, .32, 1);
+}
+
+.submitcontainer.button.last.w--current {
   color: #fff;
   background-color: #000;
   margin-right: 12px;
@@ -85,9 +107,6 @@ body {
 .submitcontainer.button.left.app:hover {
   background-color: #00d797;
 }
-
-
-
 
 .heading {
   text-align: center;
