@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="styles/call-me.css">
+  <script src="js/call-me.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div>
+        <a href="/" aria-current="page" class="link-block-2 w-inline-block w--current">
+          <img src="images/reconstruct.png" loading="lazy" alt="" class="image-6">
+        </a>
+      </div>
+      <div class="div-block-19">
+        <a href="Thoughtshredder.html" class="submitcontainer button left w-button">Thought Shredder</a>
+        <a href="break-things.html" class="submitcontainer button left app w-button">Break Things</a>
+        <a href="Call-me.html" class="submitcontainer button last w-button">Call Me</a>
+      </div>
+    </div>
+    <div class="items">
+      <div id="mobile-screen">
+        <img id="ringtone-img" src="images/your-image.png" alt="Reconstruct">
+        <audio id="ringtone" src="MP3/your-ringtone.mp3" preload="auto"></audio>
+        <div id="text-below-img">Click to call</div>
+        <button id="decline-btn">Answer</button>
+        <audio id="ringtone" src="MP3/your-ringtone.mp3" preload="auto"></audio>
+      </div>
+      <footer id="footer"></footer>
+  <script>
+    // Load the footer content dynamically
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer').innerHTML = html;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+  </script>
+    </div>
+  </div>
+  <!-- Place the footer below the items div -->
+  
+</body>
+</html>
