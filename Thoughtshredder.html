@@ -17,7 +17,8 @@
         <div class="div-block-19">
             <a href="Thoughtshredder.html" class="submitcontainer button left w-button">Thought Shredder</a>
             <a href="break-things.html" class="submitcontainer button left app w-button">Break Things</a>
-            <link rel="prefetch" href="/waitlist">
+            <a href="Call-me.html" class="submitcontainer button last w-button">Call Me</a>
+
         </div>
     </div>
     <div class="heading">
@@ -42,5 +43,15 @@
     </div>
     <p>Total Submissions: <span id="submissionCount">0</span></p>
     <script src="countSubmissions.js"></script>
+    <footer id="footer"></footer>
+    <script>
+      // Load the footer content dynamically
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('footer').innerHTML = html;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+    </script>
 </body>
 </html>
