@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/make-me-smile.css">
+    <script src="js/make-me-smile.js"></script>
+    
+    <title>Make Me Smile</title>
+</head>
+  <body>
+    <div class="nav">
+      <div>
+          <a href="/" aria-current="page" class="link-block-2 w-inline-block w--current">
+              <img src="images/reconstruct.png" loading="lazy" alt="" class="image-6">
+          </a>
+      </div>
+      <div class="div-block-19">
+          <a href="Thoughtshredder.html" class="submitcontainer button left w-button">Thought Shredder</a>
+          <a href="break-things.html" class="submitcontainer button left app w-button">Break Things</a>
+          <a href="Call-me.html" class="submitcontainer button last w-button">Call Me</a>
+          <a href="make-me-smile.html" class="submitcontainer button smile w-button">Make Me Smile</a>
+
+      </div>
+  </div>
+  <div class="heading">
+      <p>Are you feeling low?
+      </p>
+  </div>
+      <div class="subline">
+          <p> Everyone has moments when they feel low. 
+              <br>
+              Shower yourself with some self-love and watch that smile come back!</p>
+      </div>
+      <div>
+    <div id="smiley-container">
+        <img id="smiley" src="images/smiley1.png" alt="Smiley">
+    </div>
+  </div>
+
+    <div id="icon-container">
+        <!-- Add 10 small icons -->
+        <div class="icon" onclick="changeSmiley()">
+          <img src="images/love.png" alt="Icon">
+          <span>Love</span>
+      </div>
+      <div class="icon" onclick="changeSmiley()">
+        <img src="images/hug.png" alt="Icon">
+        <span>Hug</span>
+    </div>
+    <div class="icon" onclick="changeSmiley()">
+      <img src="images/gift.png" alt="Icon">
+      <span>Gifts</span>
+  </div>
+  <div class="icon" onclick="changeSmiley()">
+    <img src="images/applause.png" alt="Icon">
+    <span>Applause</span>
+</div>
+<div class="icon" onclick="changeSmiley()">
+  <img src="images/appreciation.png" alt="Icon">
+  <span>Appreciation</span>
+</div>
+<div class="icon" onclick="changeSmiley()">
+  <img src="images/Regal.png" alt="Icon">
+  <span>Royal treatment</span>
+</div>
+<div class="icon" onclick="changeSmiley()">
+  <img src="images/strength.png" alt="Icon">
+  <span>Strength</span>
+</div>
+<div class="icon" onclick="changeSmiley()">
+  <img src="images/Sunshine.png" alt="Icon">
+  <span>Sunshine</span>
+</div>
+<div class="icon" onclick="changeSmiley()">
+  <img src="images/Winner.png" alt="Icon">
+  <span>Winner</span>
+</div>
+<div class="icon" onclick="changeSmiley()">
+  <img src="images/hope.png" alt="Icon">
+  <span>Hope</span>
+</div>
+</div>
+    </div>
+    <footer id="footer"></footer>
+    <script>
+      // Load the footer content dynamically
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('footer').innerHTML = html;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+    </script>
+</body>
+</html>
