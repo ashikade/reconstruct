@@ -64,6 +64,21 @@ body {
   transition: background-color .2s cubic-bezier(.23, 1, .32, 1);
 }
 
+.submitcontainer.button.smile {
+    color: #fff;
+    background-color: #23c4f7;
+    border-width: 0;
+    margin-right: 12px;
+    padding: 8px 24px;
+    font-weight: 500;
+    transition: background-color .2s cubic-bezier(.23, 1, .32, 1);
+  }
+
+  .submitcontainer.button.smile:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .6);
+  }
+
 .submitcontainer.button.left:hover {
   color: #fff;
   background-color: rgba(0, 0, 0, .6);
