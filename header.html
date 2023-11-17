@@ -1,0 +1,73 @@
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <header>
+            <img id="logo" src="images/reconstruct.png" alt="Logo">
+            <nav>
+                <a href="Thoughtshredder.html">Thought Shredder</a>
+                <a href="make-me-smile.html">Make Me Smile</a>
+                <a href="break-things.html">Break Things</a>
+                <a href="Call-me.html">Call Me</a>
+            </nav>
+          </div>
+        </header>
+      </head>
+
+      <style>
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #ffffff;
+        color: #fff;
+        padding: 10px 0px 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1000; /* Adjust the z-index as needed */
+        box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    }
+
+    #logo {
+        max-width: 300px; /* Adjust the size as needed */
+    }
+
+    nav {
+        display: flex;
+        gap: 5px;
+        align-items: left;
+    }
+
+    nav a {
+        color: #454343;
+        text-decoration: none;
+        padding: 8px 24px;
+        transition: background-color 0.3s, color 0.3s;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    nav a:hover {
+        background-color: #23c4f7;
+        color: white;
+        border-color: #454343;
+        border-radius: 20px;
+    }
+
+    @media screen and (max-width: 1118px) {
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        nav {
+            margin-top: 30px;
+        }
+    }
+</style>
+         <script>
+          // Load the footer content dynamically
+          document.getElementById('header').innerHTML = '<object type="text/html" data="header.html"></object>';
+        </script>
+      </body>
+      </html>
