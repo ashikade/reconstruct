@@ -1,126 +1,8 @@
 body {
   background-color: #f7f7f7; 
-  margin: 5px 0px 0px 0px;
+  margin: 100px 0px 0px 0px;
   display: flex;
 }
-
-.nav {
-  width: 100%;
-  flex-flow: row;
-  flex: 0 auto;
-  justify-content: space-between;
-  align-self: stretch;
-  align-items: center;
-  margin-left: 0;
-  margin-right: 0;
-  display: flex;
-}
-
-.image-6 {
-  height: 40px;
-}
-
-
-.submitcontainer {
-  text-align: left;
-  letter-spacing: -.01em;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 25px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.submitcontainer.button {
-  color: #000;
-  background-color: #23c4f7;
-  border: 1px solid #000;
-  border-radius: 100px;
-  align-self: flex-start;
-  padding: px 12px;
-}
-
-.submitcontainer.button:hover {
-  color: #fff;
-  background-color: #000;
-}
-
-.submitcontainer.button.left {
-  color: #fff;
-  background-color: #23c4f7;
-  border-width: 0;
-  margin-right: 12px;
-  padding: 8px 24px;
-  font-weight: 500;
-  transition: background-color .2s cubic-bezier(.23, 1, .32, 1);
-}
-
-.submitcontainer.button.last {
-  color: rgba(0, 0, 0, .6);
-  background-color: #ebebeb;
-  border-width: 0;
-  margin-right: 12px;
-  padding: 8px 24px;
-  font-weight: 500;
-  transition: background-color .2s cubic-bezier(.23, 1, .32, 1);
-}
-
-.submitcontainer.button.smile {
-    color: #fff;
-    background-color: #23c4f7;
-    border-width: 0;
-    margin-right: 12px;
-    padding: 8px 24px;
-    font-weight: 500;
-    transition: background-color .2s cubic-bezier(.23, 1, .32, 1);
-  }
-
-  .submitcontainer.button.smile:hover {
-    color: #fff;
-    background-color: rgba(0, 0, 0, .6);
-  }
-
-.submitcontainer.button.left:hover {
-  color: #fff;
-  background-color: rgba(0, 0, 0, .6);
-}
-
-.submitcontainer.button.last:hover {
-  color: #fff;
-  background-color: rgba(0, 0, 0, .6);
-}
-
-.submitcontainer.button.left.w--current {
-  color: #fff;
-  background-color: #000;
-  margin-right: 12px;
-  transition: background-color .2s cubic-bezier(.23, 1, .32, 1);
-}
-
-.submitcontainer.button.last.w--current {
-  color: #fff;
-  background-color: #000;
-  margin-right: 12px;
-  transition: background-color .2s cubic-bezier(.23, 1, .32, 1);
-}
-
-.submitcontainer.button.left.app {
-  max-width: 100%;
-  color: #fff;
-  text-align: center;
-  background-color: #23c4f7;
-  flex: none;
-  order: 1;
-  align-self: auto;
-  margin-top: 0;
-  margin-right: 0;
-  display: inline;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.submitcontainer.button.left.app:hover {
-  background-color: #00d797;
-}
-
 
 h1 {
   margin: 20px;
@@ -142,18 +24,23 @@ p {
 }
 .container {
   text-align: center;
-  margin: 30px;
+  margin: 30px 0px 30px 0px;
 }
 
 .items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-left: 300px;
-  padding-right: 300px;
   gap: 10px;
-  margin: 10px 10px 60px 60px;
-  position: relative;
+  padding-left: 350px;
+  padding-right: 350px;
+}
+
+@media screen and (max-width: 768px) {
+  .items {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 /* Create a pseudo-element for the gap */
@@ -161,8 +48,6 @@ p {
   content: '';
   position: absolute;
   top: 50px; /* Adjust to match the margin-top of items */
-  left: calc(-100px - 5px); /* Adjust to match the gap size (negative value of gap/2) */
-  right: calc(-50px - 5px); /* Adjust to match the gap size (negative value of gap/2) */
   bottom: 60px; /* Adjust to match the margin-bottom of items */
   background-color: red; /* Red color for the margin */
   z-index: -1; /* Move behind the items */
