@@ -9,20 +9,17 @@
     <title>Make Me Smile</title>
 </head>
   <body>
-    <div class="nav">
-      <div>
-          <a href="/" aria-current="page" class="link-block-2 w-inline-block w--current">
-              <img src="images/reconstruct.png" loading="lazy" alt="" class="image-6">
-          </a>
-      </div>
-      <div class="div-block-19">
-          <a href="Thoughtshredder.html" class="submitcontainer button left w-button">Thought Shredder</a>
-          <a href="break-things.html" class="submitcontainer button left app w-button">Break Things</a>
-          <a href="Call-me.html" class="submitcontainer button last w-button">Call Me</a>
-          <a href="make-me-smile.html" class="submitcontainer button smile w-button">Make Me Smile</a>
-
-      </div>
-  </div>
+    <header id="header">
+      <script>
+          // Load the footer content dynamically
+          fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+              document.getElementById('header').innerHTML = html;
+            })
+            .catch(error => console.error('Error loading header:', error));
+        </script>
+        </header>
   <div class="heading">
       <p>Are you feeling low?
       </p>
@@ -93,3 +90,4 @@
     </script>
 </body>
 </html>
+
