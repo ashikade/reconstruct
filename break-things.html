@@ -4,32 +4,21 @@
     <meta charset="UTF-8">
     <title>Breakable Items</title>
     <link rel="stylesheet" href="styles/break-things.css">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QXEJRT4SHK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QXEJRT4SHK');
-</script>
 </head>
 <body>
-
-    <div class="container">
-      <div class="nav">
-        <div>
-            <a href="/" aria-current="page" class="link-block-2 w-inline-block w--current">
-                <img src="images/reconstruct.png" loading="lazy" alt="" class="image-6">
-            </a>
-        </div>
-        <div class="div-block-19">
-            <a href="Thoughtshredder.html" class="submitcontainer button left w-button">Thought Shredder</a>
-            <a href="break-things.html" class="submitcontainer button left app w-button">Break Things</a>
-            <a href="Call-me.html" class="submitcontainer button last w-button">Call Me</a>
-            <a href="make-me-smile.html" class="submitcontainer button smile w-button">Make Me Smile</a>
-        </div>
-    </div>
+  <div class="container">
+  <header id="header">
+    <script>
+        // Load the footer content dynamically
+        fetch('header.html')
+          .then(response => response.text())
+          .then(html => {
+            document.getElementById('header').innerHTML = html;
+          })
+          .catch(error => console.error('Error loading header:', error));
+      </script>
+      </header>
+    
         <h1>Click and break things!</h1>
         <p> Rage is an intruder that overtakes our bodies in response to a trigger.
           <br>
@@ -130,6 +119,6 @@
     .catch(error => console.error('Error loading footer:', error));
 </script>
 </div>
-<script src="js/breakthings.js"></script>
+<script src="scripts/breakthings.js"></script>
 </body>
 </html>
