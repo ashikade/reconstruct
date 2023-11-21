@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Call Me</title>
+  <meta content="Calm your mind and feel better." name="description">
+  <meta content="Reconstruct" property="og:title">
+  <meta content="A safe space to calm your mind." property="og:description">
+  <meta content="images/reconstruct.png" property="og:image">
   <link rel="stylesheet" type="text/css" href="styles/call-me.css">
   <script src="js/call-me.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <div class="container">
     <header id="header">
       <script>
           // Load the footer content dynamically
@@ -19,15 +23,23 @@
             .catch(error => console.error('Error loading header:', error));
         </script>
         </header>
-    <div class="items">
-      <div id="mobile-screen">
-        <img id="ringtone-img" src="images/your-image.png" alt="Reconstruct">
-        <audio id="ringtone" src="MP3/your-ringtone.mp3" preload="auto"></audio>
-        <div id="text-below-img">Click to call</div>
-        <button id="decline-btn">Answer</button>
-        <audio id="ringtone" src="MP3/your-ringtone.mp3" preload="auto"></audio>
-      </div>
-      <footer id="footer"></footer>
+        <h1>Are you in an uncomfortable situation?</h1>
+        <p> Stuck in a cab with a fishy driver or on a date that's making you feel uneasy?
+          <br>
+        Make your phone ring and share your whereabouts to immediately deter potential threats.
+         <br>
+        'Call yourself' at any instance you feel unsafe!</p>
+        <div class="items">
+          <div id="mobile-screen">
+            <img id="ringtone-img" src="images/your-image.png" alt="Reconstruct">
+            <audio id="ringtone" src="MP3/your-ringtone.mp3" preload="auto"></audio>
+            <div id="text-below-img">Click to call</div>
+            <button id="decline-btn">Answer</button>
+            <audio id="ringtone" src="MP3/your-ringtone.mp3" preload="auto"></audio>
+          </div>
+          </div>
+          <div>
+  <footer id="footer">
   <script>
     // Load the footer content dynamically
     fetch('footer.html')
@@ -37,9 +49,7 @@
       })
       .catch(error => console.error('Error loading footer:', error));
   </script>
-    </div>
-  </div>
-  <!-- Place the footer below the items div -->
-  
+  </footer>
+</div>
 </body>
 </html>
