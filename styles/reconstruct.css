@@ -1,7 +1,7 @@
 
 .hero-text {
   color: black;
-  margin-top: 50px;
+  margin-top: 60px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -28,7 +28,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   max-width: 600px; /* Set your desired max width */
-  height: 400px;
   background-color: #ebebeb;
   padding: 5px 20px 20px 20px;
   text-align: center;
