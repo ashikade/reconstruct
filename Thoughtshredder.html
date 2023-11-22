@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="styles/thoughtshredder.css">
-    <script src="js/thoughtshredder.js"></script>
-    
-    <title>Thought Shredder</title>
+    <script src="scripts/thoughtshredder.js"></script>
+    <title>Thought Shredder | Stop Overthinking | Calm Your Mind</title>
+    <meta content="The average person has about 60,000 thoughts a day. 80% of these thoughts were found to be negative,
+    and 95% were exactly the same repetitive thoughts as the day before. Break the cycle of overthinking, go ahead and shred your thoughts! Try our FREE tools." name="description">
+    <meta content="Reconstruct" property="og:title">
+    <meta content="A safe space to calm your mind." property="og:description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="images/reconstruct.png" property="og:image">
+    <link rel="stylesheet" href="styles/reconstruct.css" type="text/css">
+    <link rel="icon" href="images/fevicon.png" type="fevicon">
 </head>
 <body>
     <header id="header">
@@ -38,9 +45,10 @@
         <div id="shredded-text" style="background-image: url('images/shredded-paper.png');"></div>
         <button id="submit" onclick="shredText()">SHRED YOUR THOUGHTS!</button>
         <audio id="shredder-sound" src="MP3/shredder-sound.mp3" type="audio/mpeg"></audio>
-        
     </div>
-    <script src="countSubmissions.js"></script>
+    <div class="nextlink">
+    <a href="break-things.html"> >> Next >> </a>
+</div>
     <footer id="footer"></footer>
     <script>
       // Load the footer content dynamically
@@ -52,4 +60,5 @@
         .catch(error => console.error('Error loading footer:', error));
     </script>
 </body>
+</html>
 </html>
